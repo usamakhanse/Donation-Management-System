@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation System - Donate</title>
+  <link rel="stylesheet" href="we.css" />
+</head>
+<body>
+  <div id="mainWebsite">
+    <nav class="nav">
+      <a class="brand" href="we.html">Donation System</a>
+
+      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a href="we.html">Home</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a class="active" href="donate.html">Donate</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="modeBtn" class="btn secondary" type="button">Dark/Light</button>
+        <button id="logoutBtn" class="btn danger" type="button">Logout</button>
+      </div>
+    </nav>
+
+    <section class="section">
+      <div class="container">
+        <h2>Donation Form</h2>
+        <p class="muted">Fill the form and submit donation.</p>
+
+        <div class="form-card">
+          <form id="donateForm">
+            <div class="grid-2">
+              <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" placeholder="Enter Name" required />
+              </div>
+              <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Enter Email" required />
+              </div>
+            </div>
+
+            <div class="grid-2">
+              <div>
+                <label for="campaign">Campaign</label>
+                <!-- Filter + selector (no need to open campaigns page) -->
+                <input type="text" id="campaignFilter" placeholder="Search campaign..." autocomplete="off" />
+                <select id="campaign" aria-label="Select campaign">
+                  <option value="">Select Campaign</option>
+                  <option value="Education">Education</option>
+                  <option value="Health">Health</option>
+                  <option value="Flood Relief">Flood Relief</option>
+                </select>
+              </div>
+              <div>
+                <label for="amount">Amount</label>
+                <input type="number" id="amount" placeholder="Enter Amount" required min="1" />
+              </div>
+            </div>
+             <div class="grid-2">
+              <div>
+                <label for="bankType">Bank Type</label>
+                <select id="bankType" aria-label="Select bank type" required>
+                  <option value="">Select Bank Type</option>
+                  <option value="local">Local Bank</option>
+                  <option value="international">International Bank</option>
+                </select>
+              </div>
+              <div>
+                <label for="bankName">Bank</label>
+                <select id="bankName" aria-label="Select bank" required>
+                  <option value="">Select Bank</option>
+                </select>
+              </div>
+               <div id="bankLogoWrapper" class="bank-logo-wrapper">
+                  <img id="bankLogo" alt="" class="bank-logo" />
+            </div>
+
+            <button class="btn" type="submit">Submit Donation</button>
+          </form>
+
+          <div class="stats">
+            <h3>Total Donation: Amount:<span id="total">0</span></h3>
+
+            <div class="progress-container">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+
+            <p id="message" class="message"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© Donation System</p>
+        <a class="muted" href="campaigns.html">Campaigns</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="we.js"></script>
+</body>
+</html>

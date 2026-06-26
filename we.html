@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation System - Home</title>
+  <link rel="stylesheet" href="we.css" />
+</head>
+<body>
+  <!-- Login Page -->
+  <div class="login-page" id="loginPage">
+    <div class="login-box">
+      <h1>Donation System</h1>
+
+      <!-- Login Form -->
+      <form id="loginForm">
+        <input type="email" id="loginEmail" placeholder="Enter Email" required />
+        <input type="password" id="loginPassword" placeholder="Enter Password" required />
+        <button type="submit">Login</button>
+      </form>
+
+      <p class="muted">
+        Don't have an account?
+        <button type="button" class="link-btn" id="showSignup">Signup</button>
+      </p>
+
+      <!-- Signup Form -->
+      <form id="signupForm">
+        <input type="text" id="signupName" placeholder="Enter Name" required />
+        <input type="email" id="signupEmail" placeholder="Enter Email" required />
+        <input type="password" id="signupPassword" placeholder="Create Password" required />
+        <button type="submit">Signup</button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Main Website -->
+  <div id="mainWebsite">
+    <nav class="nav">
+      <a class="brand" href="index.html">Donation System</a>
+
+      <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <ul class="nav-links" id="navLinks">
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="campaigns.html">Campaigns</a></li>
+        <li><a href="donate.html">Donate</a></li>
+          <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+
+      <div class="nav-actions">
+        <button id="modeBtn" class="btn secondary" type="button">Dark/Light</button>
+        <button id="logoutBtn" class="btn danger" type="button">Logout</button>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="hero-inner">
+        <h1>Help People With Your Donation</h1>
+        <p>Together we can make a better world.</p>
+
+        <div class="hero-cta">
+          <a class="btn" href="campaigns.html">View Campaigns</a>
+          <a class="btn secondary" href="donate.html">Donate Now</a>
+        </div>
+      </div>
+    </header>
+
+    <section class="section">
+      <div class="container grid-3">
+        <div class="info-card">
+          <h3>Trusted</h3>
+          <p class="muted">Demo login uses localStorage.</p>
+        </div>
+        <div class="info-card">
+          <h3>Impact</h3>
+          <p class="muted">Track total donations + progress.</p>
+        </div>
+        <div class="info-card">
+          <h3>Responsive</h3>
+          <p class="muted">Mobile / tablet / desktop friendly.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container footer-inner">
+        <p class="muted">© Donation System</p>
+        <a class="muted" href="contact.html">Contact</a>
+      </div>
+    </footer>
+  </div>
+
+  <script src="we.js"></script>
+</body>
+</html>

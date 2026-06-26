@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation System - Contact</title>
+  <link rel="stylesheet" href="we.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="we.html">Donation System</a>
+
+    <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="we.html">Home</a></li>
+      <li><a href="campaigns.html">Campaigns</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a class="active" href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="modeBtn" class="btn secondary" type="button">Dark/Light</button>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p class="muted">Send your message (demo).</p>
+
+      <div class="form-card">
+        <form id="contactForm">
+          <div class="grid-2">
+            <div>
+              <label for="contactName">Name</label>
+              <input type="text" id="contactName" placeholder="Your Name" required />
+            </div>
+            <div>
+              <label for="contactEmail">Email</label>
+              <input type="email" id="contactEmail" placeholder="Your Email" required />
+            </div>
+          </div>
+
+          <div>
+            <label for="contactMessage">Message</label>
+            <textarea id="contactMessage" placeholder="Message" rows="5" required></textarea>
+          </div>
+
+          <button class="btn" type="submit">Send</button>
+          <p id="contactStatus" class="message"></p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© Donation System</p>
+      <a class="muted" href="we.html">Home</a>
+    </div>
+  </footer>
+
+  <script src="we.js"></script>
+</body>
+</html>

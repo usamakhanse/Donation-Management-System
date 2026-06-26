@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Donation System - Campaigns</title>
+  <link rel="stylesheet" href="we.css" />
+</head>
+<body>
+  <nav class="nav">
+    <a class="brand" href="index.html">Donation System</a>
+
+    <button class="hamburger" id="menuBtn" aria-label="Open menu" aria-expanded="false">☰</button>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="we.html">Home</a></li>
+      <li><a class="active" href="campaigns.html">Campaigns</a></li>
+      <li><a href="donate.html">Donate</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button id="modeBtn" class="btn secondary" type="button">Dark/Light</button>
+    </div>
+  </nav>
+
+  <section class="section">
+    <div class="container">
+      <h2>Campaigns</h2>
+      <p class="muted">Select a campaign to donate.</p>
+
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=1200&auto=format&fit=crop" alt="Education" />
+          <div class="card-body">
+            <h3>Education</h3>
+            <p>Support poor students.</p>
+            <button class="btn" type="button" data-campaign="Education">Donate</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop" alt="Health" />
+          <div class="card-body">
+            <h3>Health</h3>
+            <p>Help patients get treatment.</p>
+            <button class="btn" type="button" data-campaign="Health">Donate</button>
+          </div>
+        </article>
+
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1547683905-f686c993aae5?q=80&w=1200&auto=format&fit=crop" alt="Flood Relief" />
+          <div class="card-body">
+            <h3>Flood Relief</h3>
+            <p>Support flood affected families.</p>
+            <button class="btn" type="button" data-campaign="Flood Relief">Donate</button>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p class="muted">© Donation System</p>
+      <a class="muted" href="donate.html">Donate</a>
+    </div>
+  </footer>
+
+  <script src="we.js"></script>
+</body>
+</html>
